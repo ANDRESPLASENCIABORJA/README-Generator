@@ -8,9 +8,7 @@ function renderLicenseBadge(license) {
     return 'https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg'
   } else
     return '';
-};
-console.log(renderLicenseBadge());
-
+}
 
 // TODO: Create a function that returns the license link
 function renderLicenseLink(license) {
@@ -77,9 +75,9 @@ function generateMarkdown(data) {
   ## Licence
   
   ${data.license}.
-  ${renderLicenseBadge()}.
-  ${renderLicenseLink()}.
-  ${renderLicenseSection()}.
+  ${renderLicenseBadge(data.license)}.
+  ${renderLicenseLink(data.license)}.
+  ${renderLicenseSection(data.license)}.
 
   ## Questions
   
